@@ -1,0 +1,12 @@
+services:
+  api:
+    build: .
+    container_name: sccon-api-container
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - SPRING_DATASOURCE_URL=jdbc:h2:file:/data/testdb;DB_CLOSE_DELAY=-1
+    volumes:
+      - ./h2data:/data
+    restart: always
