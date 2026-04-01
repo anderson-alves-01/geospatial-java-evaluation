@@ -52,8 +52,6 @@ Esta API REST foi desenvolvida com **Spring Boot 3.x** para o gerenciamento de r
 
 ---
 
----
-
 ## 📊 Monitoramento e Observabilidade (Spring Actuator)
 
 A aplicação utiliza o **Spring Boot Actuator** para fornecer insights em tempo real sobre a integridade do sistema.
